@@ -22,7 +22,7 @@
             <div class="flex">
                 <img class="h-[50px] mr-3" src="assets/Group.png" alt="">
                 <div>
-                    <h2 class="font-bold">$<span>45000</span></h2>
+                    <h2 class="font-bold">$<span id="avilabel-blance">45000</span></h2>
                     <p class="text-[#080808]">Available Balance</p>
                 </div>
             </div>
@@ -72,7 +72,7 @@
             <form action="" class="bg-white rounded-2xl p-8 ">
                 <div>
                     <h1>Select A Bank</h1>
-                    <select class="select bg-[#F4F5F7] mt-3 rounded-3xl w-full">
+                    <select id="bank" class="select bg-[#F4F5F7] mt-3 rounded-3xl w-full">
                         <option>Pick A Bank</option>
                         <option>AB BAnk</option>
                         <option>IFIC Bank</option>
@@ -82,24 +82,27 @@
                 <div>
                     <label for="" class="font-semibold">Bank Account Number</label><br>
                     <input type="text" placeholder="Enter 11 digit account number" 
-                        class="input bg-[#F4F5F7] mt-3 rounded-3xl w-full" />
+                        id="account-number" class="input bg-[#F4F5F7] mt-3 rounded-3xl w-full" />
                 </div>
                 <div>
                     <label for="" class="font-semibold">Amount to Add</label><br>
-                    <input type="text" placeholder="Add Amount to withdraw" 
+                    <input type="text" id="add-amount" placeholder="Add Amount to withdraw" 
                         class="input bg-[#F4F5F7] mt-3 rounded-3xl w-full" />
                 </div>
                 <div>
                     <label for="" class="font-semibold">Pin Number</label><br>
-                    <input type="text" placeholder="Enter 4 digit pin number" 
+                    <input type="text" id="add-pin" placeholder="Enter 4 digit pin number" 
                         class="input bg-[#F4F5F7] mt-3 rounded-3xl w-full" />
                 </div>
                 <div>
-                    <button id="loginButton" class="btn bg-[#0874F2] text-white mt-5 w-full rounded-3xl">Add Money</button>
+                    <button id="add-money-btn" class="btn bg-[#0874F2] text-white mt-5 w-full rounded-3xl">Add Money</button>
                 </div>
             </form>
         </div>
     </div>
+
+
+    <script src="./js/home.js"></script>
 </body>
 
 </html>
